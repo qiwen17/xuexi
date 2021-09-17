@@ -9,7 +9,7 @@
         "request": "launch",
         "type": "pwa-msedge",
         "url": "http://localhost:8080",
-        "file": "${workspaceFolder}",
+        "file": "${workspaceFolder}/5index.html",
         "webRoot": "${workspaceFolder}"
     },
         {
