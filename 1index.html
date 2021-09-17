@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>wen</title>
+<style> 
+.bu{
+	position: relative;
+	top: 10px;
+	left: 50px;
+	/* width: 200px;
+	height: 200px; */
+	
+}
+b {
+	font-size: 80px;
+}
+.d
+{
+	position:fixed;
+	top:310px;
+	left:200px;
+	width:150px;
+	height:100px;
+	background:red;
+	transition:left 1s;
+	-webkit-transition:left 1s; /* Safari */
+}
+
+.d:hover
+{
+	left:300px;
+}
+</style>
+</head>
+<body>
+
+<!-- <p><b>注意：</b>该实例无法在 Internet Explorer 9 及更早 IE 版本上工作。</p> -->
+
+<div class="d" id="div1"><b>123</b></div> 
+
+<!-- <p>鼠标移动到 div 元素上，查看过渡效果。</p> -->
+<button onclick="mmm()" class="bu"><b>左</b></button>
+<b id="b2" style="position: relative;left: 150px;">=</b>
+
+</br>
+
+<button onclick="mm()" style="position: relative;left: 50px;top: 50px;"><b>右</b></button>
+<b id="b1" style="position: relative;left: 150px;top: 60px;">=</b>
+
+<script>
+	
+	function mn(){
+	document.getElementById("div1").style.left='500px';
+	
+	}
+	
+	function mm(){
+		var nc=document.getElementById("div1");
+		
+		
+		var tt=window.getComputedStyle(nc,null).getPropertyValue("left");
+		tt=tt.replace("px","");
+		tt=Number(tt);
+		nc.style.left=tt+200+'px';
+		document.getElementById("b1").innerHTML=tt;
+	}
+	
+	function mmm(){
+		
+	var nc=document.getElementById("div1");
+		var tt=window.getComputedStyle(nc,null).getPropertyValue("left");
+		tt=tt.replace("px","");
+		tt=Number(tt);
+		nc.style.left=tt-200+'px';
+		document.getElementById("b2").innerHTML=tt;
+	}
+</script>
+</body>
+</html>
