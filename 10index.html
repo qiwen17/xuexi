@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>wen</title>
+    <link rel="icon" href="img2/1.png">
+    <style>
+        * {
+        outline: 1px solid red;
+        }
+        .grid-1{
+         display:grid;
+         grid-gap:5px;
+        
+         width:100%;
+         grid-template-areas: "header header1 header3"
+                              "left top right"
+                              ". bottom right1";
+        grid-template-rows:auto;
+        grid-template-columns:auto;
+     }
+     .grid-2{
+         grid-area:header1;
+
+     }
+     .grid-3{
+         grid-area:right;
+     }
+     .grid-5{
+         grid-area:right1;
+     }
+     b{
+        word-break: break-all;
+     }
+
+     .flex1{
+         flex-direction:row;
+         flex-wrap:wrap;
+         justify-content:center;
+         align-items:flex-start;
+         align-content:flex-start;
+         display:flex;
+     }
+     .div1{
+         width:10%;
+         text-align:center;
+     }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="flex1">
+            <div class="div1"><b>111</b></div>
+        </div>
+
+
+        <div class="grid-1">
+            <div class="grid-2"><b>222222222222222222222222222222222</b></div>
+            <div class="grid-3"><b>33333333333333333333333333333333333</b></div>
+            <div class="grid-5"><b>中中中中中中中中中中中中中中中中中中中中中中</b></div>
+        </div>
+        <ul>
+            <li><a href="#">111</a></li>
+            <li><a href="#">222</a></li>
+        </ul>
+    </div>
+</body>
+</html>
