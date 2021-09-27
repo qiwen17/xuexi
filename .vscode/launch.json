@@ -17,7 +17,7 @@
         "request": "launch",
         "type": "pwa-msedge",
         "url": "http://localhost:8080",
-        "file": "${workspaceFolder}/10index.html",
+        "file": "${workspaceFolder}/index.html",
         "webRoot": "${workspaceFolder}"
     },
         {

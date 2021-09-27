@@ -21,6 +21,9 @@
         grid-template-rows:auto;
         grid-template-columns:auto;
      }
+     .grid-1-1{
+         grid-area:header;
+     }
      .grid-2{
          grid-area:header1;
 
@@ -44,7 +47,7 @@
          display:flex;
      }
      .div1{
-         width:10%;
+         width:80%;
          text-align:center;
      }
     </style>
@@ -52,11 +55,15 @@
 <body>
     <div>
         <div class="flex1">
-            <div class="div1"><b>111</b></div>
+            
+            <div class="div1"><div><b>flex布局</b></div>
+            <div><b>111</b><b>111</b><b>111</b></div>
+            <b>5555</b><b>5555</b><b>5555</b><b>5555</b>
         </div>
 
 
         <div class="grid-1">
+            <div class="grid-1-1"><b>grid布局</b></div>
             <div class="grid-2"><b>222222222222222222222222222222222</b></div>
             <div class="grid-3"><b>33333333333333333333333333333333333</b></div>
             <div class="grid-5"><b>中中中中中中中中中中中中中中中中中中中中中中</b></div>
